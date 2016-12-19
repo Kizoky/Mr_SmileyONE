@@ -1,6 +1,7 @@
 //Many thanks to Ed!
 gameinfo
 {
+	STARTUPTYPE = "Hexen"
 	border = 0,0,"b","b","b","b","b","b","b","b"
 	borderflat = "YLWRCK"
 	dimcolor = "YELLOW"
@@ -12,12 +13,7 @@ gameinfo
 	//menufontcolor_highlight = "GOLD"
 	//menufontcolor_selection = "GOLD"
 	//pausesign = "M_PAUSE"
-	playerclasses="MrSmiley","UncleSmiley"
-}
-
-episode map01
-{
-	name="Safari II"
+	playerclasses="MrSmiley"
 }
 
 episode E1M1
@@ -38,61 +34,16 @@ episode E3M1
 	name="The Safari"
 }
 
-episode DEVMAP
+episode E4M1
 {
-	name="Development Map"
+	name="I haz all the Dudes hating on me!"
 }
-
-//episode XMAS01
-//{
-//	name="I Smiley XMAS <3"
-//}
 
 defaultmap //We don't want crouch and jumping for a while.
 {
 	nojump
 	nocrouch
 	sky1=SKY1
-}
-
-map TITLEMAP "They don't know what's behind that wall"
-{
-	music=D_FFL1
-	totalinfighting
-}
-
-map map01 "Deja vuuh??"
-{
-	next=map02
-	par=120
-	music=D_E1M1
-}
-
-map map02 "Ugly caztle!!!"
-{
-	next=map03
-	par=120
-	music=D_E1M2
-}
-
-map map03 "Safari again??"
-{
-	next=map04
-	par=120
-	music=D_E3M1
-}
-
-map map04 "It's not a big one this time!!"
-{
-	next=map05
-	par=120
-	music=D_POPC
-}
-
-map map99 "ZOMG AN UGLY AND UNFINISHED LEVEL!!"
-{
-	next=map03
-	music=D_E1M2
 }
 
 //Mr Smiley Head's Safari I levels

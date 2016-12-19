@@ -1,3 +1,4 @@
-STARTUPTITLE = "Mr. Smiley Head's Safari II"
-IWAD = "DOOM2.WAD"
-STARTUPCOLORS = "FF FF 00", "00 00 00"
+STARTUPTYPE = "Hexen"
+STARTUPTITLE = "Mr. Smiley Head's Safari =)"
+STARTUPCOLORS = "ff 00 00", "00 00 00"
+STARTUPSONG = "ORB"

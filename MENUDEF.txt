@@ -12,20 +12,22 @@ LISTMENU "MainMenu"
 	IfGame(Doom, Strife, Chex)
 	{
 		Font "DoomFont", "Red"
-		TextItem "New Game", "n", "PlayerclassMenu"
+		TextItem "LETZ BEGIN", "n", "PlayerclassMenu"
 		ifOption(SwapMenu)
 		{
-			TextItem "Load Game", "l", "LoadGameMenu"
-			TextItem "Save Game", "s", "SaveGameMenu"
+			TextItem "Load Safari", "l", "LoadGameMenu"
+			TextItem "Save Safari", "s", "SaveGameMenu"
 			TextItem "Optionz","o", "OptionsMenu"
+			TextItem "Read Zis!", "r", "ReadThis"
 		}
 		else
 		{
 			TextItem "Optionz","o", "OptionsMenu"
-			TextItem "Load Game", "l", "LoadGameMenu"
-			TextItem "Save Game", "s", "SaveGameMenu"
+			TextItem "Load Safari", "l", "LoadGameMenu"
+			TextItem "Save Safari", "s", "SaveGameMenu"
+			TextItem "Read Zis!", "r", "ReadThis"
 		}
-		TextItem "Quit", "q", "QuitMenu"
+		TextItem "Exit", "q", "QuitMenu"
 	}
 }
 
@@ -48,7 +50,7 @@ ListMenu "SkillMenu"
 OptionMenu "OptionsMenu"
 {
 	Title "OPTIONZ"
-	Submenu "Customize Controls",		"CustomizeControls"
+	Submenu "Customize Controlz",		"CustomizeControls"
 	Submenu "Mouse optionz",			"MouseOptions"
 	Submenu "Joystick optionz",			"JoystickOptions"
 	StaticText " "
@@ -62,10 +64,10 @@ OptionMenu "OptionsMenu"
 	Submenu "Display Optionz",			"VideoOptions"
 	Submenu "Set video mode",			"VideoModeMenu"
 	StaticText " "
-	SafeCommand "Reset to defaults",	"reset2defaults"
+	SafeCommand "Reset to defaultz",	"reset2defaults"
 	SafeCommand	"Reset to last saved",	"reset2saved"
-	Command "Go to console",			"menuconsole"
+	Command "Go to konzole",			"menuconsole"
 	StaticText " "
-	StaticText "Mr. Smiley Head's Safari II"
-	StaticText "Beta v0.40"
+	StaticText "Mr. Smiley Head's Safari"
+	StaticText "v1.0 (without Episode 4)"
 }
