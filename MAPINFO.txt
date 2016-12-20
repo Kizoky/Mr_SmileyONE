@@ -14,6 +14,8 @@ gameinfo
 	//menufontcolor_selection = "GOLD"
 	//pausesign = "M_PAUSE"
 	playerclasses="MrSmiley"
+	drawreadthis = true
+	infopage = "HELP1", "HELP2"
 }
 
 episode E1M1
@@ -36,6 +38,7 @@ episode E3M1
 
 episode E4M1
 {
+	picname = "M_EPI4"
 	name="I haz all the Dudes hating on me!"
 }
 

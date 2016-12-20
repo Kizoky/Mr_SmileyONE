@@ -18,14 +18,14 @@ LISTMENU "MainMenu"
 			TextItem "Load Safari", "l", "LoadGameMenu"
 			TextItem "Save Safari", "s", "SaveGameMenu"
 			TextItem "Optionz","o", "OptionsMenu"
-			TextItem "Read Zis!", "r", "ReadThis"
+			TextItem "Read Zis!", "r", "ReadThisMenu"
 		}
 		else
 		{
 			TextItem "Optionz","o", "OptionsMenu"
 			TextItem "Load Safari", "l", "LoadGameMenu"
 			TextItem "Save Safari", "s", "SaveGameMenu"
-			TextItem "Read Zis!", "r", "ReadThis"
+			TextItem "Read Zis!", "r", "ReadThisMenu"
 		}
 		TextItem "Exit", "q", "QuitMenu"
 	}
@@ -42,7 +42,7 @@ ListMenu "SkillMenu"
 	IfGame(Doom, Strife, Chex)
 	{
 		Font "DoomFont", "Red"
-		StaticText 54, 38, "How are ya feeling today?"
+		StaticText 54, 38, "Which Safari?"
 		Position 48, 63
 	}
 }
@@ -69,5 +69,5 @@ OptionMenu "OptionsMenu"
 	Command "Go to konzole",			"menuconsole"
 	StaticText " "
 	StaticText "Mr. Smiley Head's Safari"
-	StaticText "v1.0 (without Episode 4)"
+	StaticText "v7.0 (without Episode 4)"
 }
