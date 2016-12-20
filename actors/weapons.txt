@@ -16,31 +16,10 @@ ACTOR MrSmiley : Doomplayer replaces Doomplayer
 	Player.StartItem "SmileyPistol"
 	Player.StartItem "SmileyBat"
 	Player.StartItem "Clip", 75
-	Player.StartItem "Shell", 20
+	Player.StartItem "Shell", 30
 	Player.WeaponSlot 1, SmileyBat, Chainsaw
 	Player.WeaponSlot 2, SmileyPistol
-	Player.WeaponSlot 3, SmileyShotgun, SmileySuperShotgun
-	Player.WeaponSlot 4, SmileyChaingun
-	Player.WeaponSlot 5, SmileyChickenLauncher
-	Player.WeaponSlot 6, PlasmaRing
-	Player.WeaponSlot 7, SmileyGoodFetherBird
-}
-
-ACTOR UncleSmiley : DoomPlayer
-{
-	Species "Marines"
-	Player.DisplayName "Uncle Smiley"
-	Player.StartItem "IsUncleSmiley", 1
-	Player.StartItem "Buddy", 1
-	Player.Face "UNC"
-	Player.Soundclass "UncleUncle"
-	Player.StartItem "SmileyPistol"
-	Player.StartItem "SmileyBat"
-	Player.StartItem "Clip", 75
-	Player.StartItem "Shell", 20
-	Player.WeaponSlot 1, SmileyBat, Chainsaw
-	Player.WeaponSlot 2, SmileyPistol
-	Player.WeaponSlot 3, SmileyShotgun, SmileySuperShotgun
+	Player.WeaponSlot 3, SmileyShotgun
 	Player.WeaponSlot 4, SmileyChaingun
 	Player.WeaponSlot 5, SmileyChickenLauncher
 	Player.WeaponSlot 6, PlasmaRing
@@ -48,51 +27,7 @@ ACTOR UncleSmiley : DoomPlayer
 }
 
 actor IsSmileyHead: Boolprop {}
-actor IsUncleSmiley: Boolprop {}
 actor Buddy: Boolprop {}
-
-ACTOR SmileySuperShotgun : DoomWeapon replaces SuperShotgun
-{
-  Weapon.SelectionOrder 400
-  Weapon.AmmoUse 2
-  Weapon.AmmoGive 8
-  Weapon.AmmoType "Shell"
-  Inventory.PickupMessage "$GOTSHOTGUN2"
-  Obituary "$OB_MPSSHOTGUN"
-  Tag "$TAG_SUPERSHOTGUN"
-  Weapon.BobRangeX 1.4
-  Weapon.BobRangeY 0.4
-  Weapon.BobSpeed 1.5
-  Weapon.BobStyle InverseSmooth
-  States
-  {
-  Ready:
-    SHT2 A 1 A_WeaponReady
-    Loop
-  Deselect:
-    SHT2 A 1 A_Lower
-    Loop
-  Select:
-    SHT2 A 1 A_Raise
-    Loop
-  Fire:
-    SHT2 A 3
-    KIST A 5 A_FireShotgun2
-	KIST B 1
-    SHT2 B 4 A_CheckReload
-    SHT2 C 5 A_OpenShotgun2
-    KIZO ABC 5
-    KIZO D 2 A_LoadShotgun2
-    KIZO EFG 4
-    KIZO H 2 A_CloseShotgun2
-    SHT2 EDCB 2
-	SHT2 B 4 A_ReFire
-    Goto Ready
-  Spawn:
-    SGN2 A -1
-    Stop
-  }
-}
 
 ACTOR SmileyBat : Fist
 {
