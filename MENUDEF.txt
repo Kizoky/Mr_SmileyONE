@@ -69,5 +69,5 @@ OptionMenu "OptionsMenu"
 	Command "Go to konzole",			"menuconsole"
 	StaticText " "
 	StaticText "Mr. Smiley Head's Safari"
-	StaticText "v7.0 (without Episode 4)"
+	StaticText "Version: v7.0 (12.22.2016)"
 }

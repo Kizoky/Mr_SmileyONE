@@ -1,5 +1,5 @@
 # DooM 3: Mr. Smiley Head's Safari
-# Current version: n/a
+# Current version: v7.0
 # Multiplayer compatibility: Should be OK
 
 # Compatibility: ("+" means UP and newer)
