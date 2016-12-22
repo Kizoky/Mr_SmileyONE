@@ -25,7 +25,7 @@ LISTMENU "MainMenu"
 			TextItem "Optionz","o", "OptionsMenu"
 			TextItem "Load Safari", "l", "LoadGameMenu"
 			TextItem "Save Safari", "s", "SaveGameMenu"
-			TextItem "Read Zis!", "r", "ReadThisMenu"
+			PatchItem "M_RDTHIS", "r", "ReadThisMenu"
 		}
 		TextItem "Exit", "q", "QuitMenu"
 	}
